@@ -12,6 +12,7 @@ const config: Config = {
   // Adopt Docusaurus Faster
   future: {
     experimental_faster: true,
+  },
   
   // Set the production url of your site here
   url: 'https://your-docusaurus-site.example.com',
