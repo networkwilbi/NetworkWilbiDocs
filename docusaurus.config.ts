@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'NetworkWilbiDocs',
-  tagline: 'Documenting is Awseome!',
+  tagline: 'Documenting is Awesome!',
   favicon: 'img/favicon.ico',
 
   // Adopt Docusaurus Faster
