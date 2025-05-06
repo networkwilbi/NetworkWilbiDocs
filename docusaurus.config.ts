@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'NetworkWilbiDocs Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'NetworkWilbiDocs',
+  tagline: 'Documenting is Awseome!',
   favicon: 'img/favicon.ico',
 
   // Adopt Docusaurus Faster
