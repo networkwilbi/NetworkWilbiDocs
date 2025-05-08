@@ -32,8 +32,6 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: 'Powered by React',
-    imageUrl: require('@site/static/img/Siemens.png').default,
     title: 'Open Knowledge, Peer Verified',
     Svg: require('@site/static/img/github_logo_blue.svg').default,
     description: (
