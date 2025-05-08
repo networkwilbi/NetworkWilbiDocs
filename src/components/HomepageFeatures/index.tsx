@@ -13,32 +13,32 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    imageUrl: require('@site/static/img/fanuc.png').default,
+
+    title: 'Secure by Design',
+    Svg: require('@site/static/img/blue_shield.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        From protocol layers to endpoint defenses--every detail matters.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    imageUrl: require('@site/static/img/L5P.png').default,
+    title: 'Balanced by Threat Model',
+    Svg: require('@site/static/img/yin_yang_blue.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Security is not one-size-fits-all. Learn to evaluate convenience vs protection.
       </>
     ),
   },
   {
     title: 'Powered by React',
     imageUrl: require('@site/static/img/Siemens.png').default,
+    title: 'Open Knowledge, Peer Verified',
+    Svg: require('@site/static/img/github_logo_blue.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        All ideas are documented, tested, and open to review on Github.
       </>
     ),
   },
