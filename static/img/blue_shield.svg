@@ -1,0 +1,11 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="shieldGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4FC3F7" />
+      <stop offset="100%" stop-color="#0288D1" />
+    </linearGradient>
+  </defs>
+  <path d="M100,10 Q130,30 160,40 Q155,100 100,190 Q45,100 40,40 Q70,30 100,10 Z"
+        fill="url(#shieldGradient)" stroke="#01579B" stroke-width="2"/>
+</svg>
