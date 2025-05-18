@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Your Secure Documentation Hub',
-  tagline: 'Documenting is Awesome!',
+  title: 'NetworkWilbiDocs',
+  tagline: 'A community-driven effort to find the balance between security and convenience.',
   favicon: 'img/cyber_logo_favicon.ico',
 
   // Adopt Docusaurus Faster
@@ -80,12 +80,6 @@ const config: Config = {
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
-        },
-        {
           href: 'https://github.com/networkwilbi/NetworkWilbiDocs',
           label: 'GitHub',
           position: 'right',
@@ -95,15 +89,6 @@ const config: Config = {
     footer: {
       style: 'dark',
       links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
-          ],
-        },
         {
           title: 'Community',
           items: [
