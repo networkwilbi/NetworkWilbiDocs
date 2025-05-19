@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Your Secure Documentation Hub',
-  tagline: 'Documenting is Awesome!',
+  title: 'NetworkWilbiDocs',
+  tagline: 'A community-driven effort to find the balance between security and convenience.',
   favicon: 'img/cyber_logo_favicon.ico',
 
   // Adopt Docusaurus Faster
@@ -88,15 +88,19 @@ const config: Config = {
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          to: '/docs',
+          label: 'Introduction',
           position: 'left',
-          label: 'Tutorial',
         },
         {
-          href: 'https://github.com/networkwilbi/NetworkWilbiDocs',
-          label: 'GitHub',
-          position: 'right',
+          label: 'Password Managers',
+          position: 'left',
+          items: [
+            {
+              to: '/docs/password-managers/bitwarden',
+              label: 'Bitwarden',
+            },
+          ],
         },
       ],
     },
@@ -104,30 +108,16 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
-          ],
-        },
-        {
           title: 'Community',
           items: [
             {
               label: 'Discord',
               href: 'https://discord.gg/puP5WBbdky',
-            }
-          ],
-        },
-        {
-          title: 'More',
-          items: [
+            },
             {
               label: 'GitHub',
-              href: 'https://github.com/networkwilbi/NetworkWilbiDocs',
-            },
+              href: 'https://github.com/networkwilbi/NetworkWilbiDocs'
+            }
           ],
         },
       ],

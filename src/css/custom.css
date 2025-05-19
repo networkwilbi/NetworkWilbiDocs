@@ -19,14 +19,97 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #4FC3F7;
+  --ifm-color-primary: #0288D1;
   --ifm-color-primary-dark: #03A9F4;
   --ifm-color-primary-darker: #0288D1;
   --ifm-color-primary-darkest: #01579B;
   --ifm-color-primary-light: #81D4FA;
   --ifm-color-primary-lighter: #B3E5FC;
   --ifm-color-primary-lightest: #E1F5FE;
-  --ifm-background-color: #0d1b2a;
-  --ifm-navbar-background-color: #0d1b2a;
+  --ifm-background-color: #1b1b1d;
+  --ifm-navbar-background-color: #1b1b1d;
   --docusaurus-highlighted-code-line-bg: rgba(76, 195, 247, 0.15);
 }
+
+/* Button */
+:root {
+  --custom-button-bg: #ffffff; /* dark blue for light mode */
+  --custom-button-text: #000000;
+}
+
+[data-theme='dark'] {
+  --custom-button-bg: #1b1b1d; /* lighter blue for dark mode */
+  --custom-button-text: #ffffff;
+}
+
+.button--secondary {
+  background-color: var(--custom-button-bg) !important;
+  color: var(--custom-button-text) !important;
+  border: none;
+}
+
+.button--secondary:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+  transition: all 0.2s ease;
+}
+
+/** Desktop **/
+:root {
+  --hero-title-color: #ffffff;
+  --hero-subtitle-color: #ffffff;
+}
+
+[data-theme='dark'] {
+  --hero-title-color: #ffffff;
+  --hero-subtitle-color: #ffffff;
+}
+/* Title */
+.hero__title {
+  color: var(--hero-title-color);
+  font-size: 3rem;
+  text-align: center;
+  white-space: nowrap;       /* 👈 prevents word break */
+  overflow-wrap: normal;
+  word-break: normal;
+  white-space: nowrap;     /* ⬅️ Prevent breaking */
+}
+/* Subtitle */
+.hero__subtitle {
+  color: var(--hero-subtitle-color);
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 0.5rem;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+  word-break: break-word
+}
+
+/** Mobile **/
+@media screen and (max-width: 600px) {
+  /* Title */
+  .hero__title {
+    font-size: 2.5rem;        /* 👈 smaller font to fit */
+    text-align: center;
+    padding: 0 1rem;
+  }
+  /* Subtitle */
+   .hero__subtitle {
+    font-size: 1.1rem;           /* Adjust if needed */
+    line-height: 1.4;
+    padding: 0;
+    text-align: center;
+    max-width: 100%;
+  }
+  .container {
+    display: flex;
+    justify-content: center; /* ⬅️ Center the title block */
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
