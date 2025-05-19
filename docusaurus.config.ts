@@ -80,9 +80,19 @@ const config: Config = {
       },
       items: [
         {
-          href: 'https://github.com/networkwilbi/NetworkWilbiDocs',
-          label: 'GitHub',
-          position: 'right',
+          to: '/docs',
+          label: 'Introduction',
+          position: 'left',
+        },
+        {
+          label: 'Password Managers',
+          position: 'left',
+          items: [
+            {
+              to: '/docs/password-managers/bitwarden',
+              label: 'Bitwarden',
+            },
+          ],
         },
       ],
     },
@@ -95,16 +105,11 @@ const config: Config = {
             {
               label: 'Discord',
               href: 'https://discord.gg/puP5WBbdky',
-            }
-          ],
-        },
-        {
-          title: 'More',
-          items: [
+            },
             {
               label: 'GitHub',
-              href: 'https://github.com/networkwilbi/NetworkWilbiDocs',
-            },
+              href: 'https://github.com/networkwilbi/NetworkWilbiDocs'
+            }
           ],
         },
       ],
