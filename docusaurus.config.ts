@@ -41,6 +41,9 @@ const config: Config = {
       'classic',
       {
         docs: {
+          // Show last updated time and by who
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -72,6 +75,11 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: 'blue-shield-social-card.jpg',
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: false,
+      respectPrefersColorScheme: false,
+    },
     navbar: {
       title: 'NetworkWilbiDocs',
       logo: {
@@ -118,6 +126,7 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
+      additionalLanguages: ['dax', 'csharp', 'powerquery', 'powershell', 'yaml', 'nginx', 'editorconfig', 'typescript', 'javascript', 'systemd', 'ini', 'bash', 'apacheconf'],
     },
   } satisfies Preset.ThemeConfig,
 };
