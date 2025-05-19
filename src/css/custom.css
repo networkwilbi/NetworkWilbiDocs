@@ -54,7 +54,7 @@
   transition: all 0.2s ease;
 }
 
-/* Title & Subtitle */
+/** Desktop **/
 :root {
   --hero-title-color: #ffffff;
   --hero-subtitle-color: #ffffff;
@@ -64,12 +64,52 @@
   --hero-title-color: #ffffff;
   --hero-subtitle-color: #ffffff;
 }
-
+/* Title */
 .hero__title {
   color: var(--hero-title-color);
+  font-size: 3rem;
+  text-align: center;
+  white-space: nowrap;       /* 👈 prevents word break */
+  overflow-wrap: normal;
+  word-break: normal;
+  white-space: nowrap;     /* ⬅️ Prevent breaking */
 }
-
+/* Subtitle */
 .hero__subtitle {
   color: var(--hero-subtitle-color);
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 0.5rem;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+  word-break: break-word
 }
+
+/** Mobile **/
+@media screen and (max-width: 600px) {
+  /* Title */
+  .hero__title {
+    font-size: 2.5rem;        /* 👈 smaller font to fit */
+    text-align: center;
+    padding: 0 1rem;
+  }
+  /* Subtitle */
+   .hero__subtitle {
+    font-size: 1.1rem;           /* Adjust if needed */
+    line-height: 1.4;
+    padding: 0;
+    text-align: center;
+    max-width: 100%;
+  }
+  .container {
+    display: flex;
+    justify-content: center; /* ⬅️ Center the title block */
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
 

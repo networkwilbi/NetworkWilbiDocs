@@ -1,4 +1,8 @@
-# Welcome to NetworkWilbiDocs
+---
+title: Introduction
+---
+
+# Introduction
 
 Welcome to my open-source documentation project — a hub for cybersecurity, privacy, threat modeling, and the balance between security and usability.
 

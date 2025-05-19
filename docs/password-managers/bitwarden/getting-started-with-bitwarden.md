@@ -1,11 +1,9 @@
 ---
-id: getting-started-with-bitwarden
 title: Getting Started with Bitwarden
 description: A beginner-friendly introduction to Bitwarden and why it's a great choice for managing your passwords.
-sidebar_position: 7
 ---
 
-# Getting Started with Bitwarden: A Secure Password Manager for Everyone
+# Getting Started with Bitwarden
 
 Bitwarden is a **free**, **open-source**, and **secure** password manager designed to help you manage your online credentials effortlessly. Whether you're new to password managers or transitioning from another service, Bitwarden offers a seamless experience without compromising on security.
 
