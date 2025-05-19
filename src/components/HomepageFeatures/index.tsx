@@ -5,12 +5,15 @@ import styles from './styles.module.css';
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
   description: ReactNode;
+  // Either provide an Svg component or an image URL
+  Svg?: React.ComponentType<React.ComponentProps<'svg'>>;
+  imageUrl?: string;
 };
 
 const FeatureList: FeatureItem[] = [
   {
+
     title: 'Secure by Design',
     Svg: require('@site/static/img/blue_shield.svg').default,
     description: (
@@ -39,11 +42,12 @@ const FeatureList: FeatureItem[] = [
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({title, Svg, imageUrl, description}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        {Svg && <Svg className={styles.featureSvg} role="img" />}
+        {imageUrl && <img className={styles.featureSvg} src={imageUrl} alt={title} />}
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
