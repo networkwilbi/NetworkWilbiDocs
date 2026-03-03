@@ -13,12 +13,12 @@
   --ifm-color-primary-light: #3b82f6;
   --ifm-color-primary-lighter: #6366f1;
   --ifm-color-primary-lightest: #a78bfa;
-  --ifm-background-color: #0b1020;
-  --ifm-navbar-background-color: #0b1020;
-  --ifm-font-color-base: #e5e7eb;
-  --ifm-heading-color: #f9fafb;
+  --ifm-background-color: #ffffff;
+  --ifm-navbar-background-color: #ffffff;
+  --ifm-font-color-base: #1f2937;
+  --ifm-heading-color: #111827;
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(99, 102, 241, 0.12);
+  --docusaurus-highlighted-code-line-bg: rgba(37, 99, 235, 0.1);
 }
 
 
@@ -61,13 +61,13 @@
 
 /** Desktop **/
 :root {
-  --hero-title-color: #ffffff;
-  --hero-subtitle-color: #ffffff;
+  --hero-title-color: #111827;
+  --hero-subtitle-color: #374151;
 }
 
 [data-theme='dark'] {
   --hero-title-color: #ffffff;
-  --hero-subtitle-color: #ffffff;
+  --hero-subtitle-color: #e5e7eb;
 }
 /* Title */
 .hero__title {
