@@ -76,13 +76,6 @@ const config: Config = {
     {
       tagName: 'meta',
       attributes: {
-        name: 'keywords',
-        content: 'cybersecurity, password manager, security awareness, phishing, bitwarden, 1password, proton pass, online security, privacy',
-      },
-    },
-    {
-      tagName: 'meta',
-      attributes: {
         name: 'author',
         content: 'NetworkWilbi',
       },
