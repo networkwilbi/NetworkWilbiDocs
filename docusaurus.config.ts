@@ -72,7 +72,22 @@ const config: Config = {
     ],
   ],
 
+  headTags: [
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'author',
+        content: 'NetworkWilbi',
+      },
+    },
+  ],
+
   themeConfig: {
+    metadata: [
+      { name: 'keywords', content: 'cybersecurity, password manager, security, privacy, bitwarden, 1password, proton pass, phishing' },
+      { name: 'og:type', content: 'website' },
+      { name: 'twitter:card', content: 'summary_large_image' },
+    ],
     // Replace with your project's social card
     image: 'blue-shield-social-card.jpg',
     colorMode: {
@@ -97,8 +112,34 @@ const config: Config = {
           position: 'left',
           items: [
             {
+              to: '/docs/password-managers',
+              label: 'Overview',
+            },
+            {
               to: '/docs/password-managers/bitwarden',
               label: 'Bitwarden',
+            },
+            {
+              to: '/docs/password-managers/1password',
+              label: '1Password',
+            },
+            {
+              to: '/docs/password-managers/proton-pass',
+              label: 'Proton Pass',
+            },
+          ],
+        },
+        {
+          label: 'Security Awareness',
+          position: 'left',
+          items: [
+            {
+              to: '/docs/security-awareness',
+              label: 'Overview',
+            },
+            {
+              to: '/docs/security-awareness/recognizing-phishing',
+              label: 'Recognizing Phishing',
             },
           ],
         },
