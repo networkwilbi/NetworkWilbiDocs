@@ -72,7 +72,29 @@ const config: Config = {
     ],
   ],
 
+  headTags: [
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'keywords',
+        content: 'cybersecurity, password manager, security awareness, phishing, bitwarden, 1password, proton pass, online security, privacy',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'author',
+        content: 'NetworkWilbi',
+      },
+    },
+  ],
+
   themeConfig: {
+    metadata: [
+      { name: 'keywords', content: 'cybersecurity, password manager, security, privacy, bitwarden, 1password, proton pass, phishing' },
+      { name: 'og:type', content: 'website' },
+      { name: 'twitter:card', content: 'summary_large_image' },
+    ],
     // Replace with your project's social card
     image: 'blue-shield-social-card.jpg',
     colorMode: {
