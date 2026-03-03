@@ -119,8 +119,34 @@ const config: Config = {
           position: 'left',
           items: [
             {
+              to: '/docs/password-managers',
+              label: 'Overview',
+            },
+            {
               to: '/docs/password-managers/bitwarden',
               label: 'Bitwarden',
+            },
+            {
+              to: '/docs/password-managers/1password',
+              label: '1Password',
+            },
+            {
+              to: '/docs/password-managers/proton-pass',
+              label: 'Proton Pass',
+            },
+          ],
+        },
+        {
+          label: 'Security Awareness',
+          position: 'left',
+          items: [
+            {
+              to: '/docs/security-awareness',
+              label: 'Overview',
+            },
+            {
+              to: '/docs/security-awareness/recognizing-phishing',
+              label: 'Recognizing Phishing',
             },
           ],
         },
