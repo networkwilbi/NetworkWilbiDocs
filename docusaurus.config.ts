@@ -9,9 +9,10 @@ const config: Config = {
   tagline: 'A community-driven effort to find the balance between security and convenience.',
   favicon: 'img/cyber_logo_favicon.ico',
 
-  // Adopt Docusaurus Faster
+  // Adopt Docusaurus Faster and v4
   future: {
     experimental_faster: true,
+    v4: true,
   },
   
   // Set the production url of your site here
@@ -26,7 +27,6 @@ const config: Config = {
   projectName: 'NetworkWilbiDocs', // Usually your repo name.
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
