@@ -5,7 +5,11 @@ description: A beginner-friendly introduction to Bitwarden and why it's a great 
 
 # Getting Started with Bitwarden
 
-Bitwarden is a **free**, **open-source**, and **secure** password manager designed to help you manage your online credentials effortlessly. Whether you're new to password managers or transitioning from another service, Bitwarden offers a seamless experience without compromising on security.
+:::tip Ready for the next step?
+If you've been using your phone's built-in password manager or your browser's password manager, you're already ahead of most people. Bitwarden is the next level—giving you more control, better cross-platform support, and advanced features while remaining free.
+:::
+
+Bitwarden is a **free**, **open-source**, and **secure** password manager designed to help you manage your online credentials effortlessly. Whether you're new to password managers or transitioning from another service (including your phone or browser's built-in manager), Bitwarden offers a seamless experience without compromising on security.
 
 ---
 
