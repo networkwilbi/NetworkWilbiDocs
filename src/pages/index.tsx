@@ -34,7 +34,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title={`NetworkWilbiDocs`}
-      description="Description will go into a meta tag in <head />">
+      description="A community-driven hub for cybersecurity, privacy, and finding the balance between security and convenience.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
