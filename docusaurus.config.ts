@@ -122,6 +122,11 @@ const config: Config = {
           position: 'left',
         },
         {
+          to: '/blog',
+          label: 'Blog',
+          position: 'left',
+        },
+        {
           label: 'Password Managers',
           position: 'left',
           items: [
