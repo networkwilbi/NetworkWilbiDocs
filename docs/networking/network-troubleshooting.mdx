@@ -1,0 +1,144 @@
+---
+title: Network Troubleshooting
+description: Step-by-step network troubleshooting with command examples for Windows, Linux, and macOS.
+keywords: [network troubleshooting, ping, traceroute, nslookup, ipconfig, ifconfig]
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Network Troubleshooting
+
+Use this quick workflow when diagnosing network issues.
+
+## 1) Check Local Interface and IP
+
+<Tabs groupId="os">
+  <TabItem value="windows" label="Windows">
+
+```powershell
+ipconfig /all
+```
+
+  </TabItem>
+  <TabItem value="linux" label="Linux">
+
+```bash
+ip a
+```
+
+  </TabItem>
+  <TabItem value="macos" label="macOS">
+
+```bash
+ifconfig
+```
+
+  </TabItem>
+</Tabs>
+
+## 2) Verify Reachability
+
+<Tabs groupId="os">
+  <TabItem value="windows" label="Windows">
+
+```powershell
+ping 8.8.8.8
+```
+
+  </TabItem>
+  <TabItem value="linux" label="Linux">
+
+```bash
+ping -c 4 8.8.8.8
+```
+
+  </TabItem>
+  <TabItem value="macos" label="macOS">
+
+```bash
+ping -c 4 8.8.8.8
+```
+
+  </TabItem>
+</Tabs>
+
+## 3) Test DNS Resolution
+
+<Tabs groupId="os">
+  <TabItem value="windows" label="Windows">
+
+```powershell
+nslookup example.com
+```
+
+  </TabItem>
+  <TabItem value="linux" label="Linux">
+
+```bash
+dig example.com
+```
+
+  </TabItem>
+  <TabItem value="macos" label="macOS">
+
+```bash
+dig example.com
+```
+
+  </TabItem>
+</Tabs>
+
+## 4) Trace the Route
+
+<Tabs groupId="os">
+  <TabItem value="windows" label="Windows">
+
+```powershell
+tracert example.com
+```
+
+  </TabItem>
+  <TabItem value="linux" label="Linux">
+
+```bash
+traceroute example.com
+```
+
+  </TabItem>
+  <TabItem value="macos" label="macOS">
+
+```bash
+traceroute example.com
+```
+
+  </TabItem>
+</Tabs>
+
+## 5) Check Listening Ports
+
+<Tabs groupId="os">
+  <TabItem value="windows" label="Windows">
+
+```powershell
+netstat -ano
+```
+
+  </TabItem>
+  <TabItem value="linux" label="Linux">
+
+```bash
+ss -tulpen
+```
+
+  </TabItem>
+  <TabItem value="macos" label="macOS">
+
+```bash
+lsof -i -P
+```
+
+  </TabItem>
+</Tabs>
+
+If the issue persists, review segmentation, ACLs, and firewall policy in [Network Security](./network-security).

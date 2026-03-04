@@ -1,0 +1,36 @@
+---
+title: Network Security
+description: A concise introduction to defending networks with segmentation, access control, and monitoring.
+keywords: [network security, segmentation, firewall, zero trust, ids, ips]
+---
+
+# Network Security
+
+Network security is the practice of protecting systems, users, and data as traffic moves across local and wide-area networks.
+
+## Core Principles
+
+- **Least privilege:** allow only the minimum access required.
+- **Segmentation:** isolate systems into separate zones and VLANs.
+- **Defense in depth:** combine controls (firewalls, endpoint security, monitoring).
+- **Visibility:** collect logs and monitor suspicious activity continuously.
+
+## Common Controls
+
+| Control | Purpose |
+|---|---|
+| Firewall rules | Restrict traffic between zones and to the internet |
+| VPN | Encrypt remote user and site-to-site traffic |
+| IDS/IPS | Detect and block malicious network behavior |
+| NAC | Verify device posture before granting access |
+| DNS filtering | Block known malicious domains |
+
+## Quick Checklist
+
+1. Separate user, server, and guest networks.
+2. Disable unused ports and services.
+3. Enforce MFA for network management interfaces.
+4. Patch network devices and firmware regularly.
+5. Log and alert on unauthorized access attempts.
+
+For hands-on diagnostics, continue to [Network Troubleshooting](./network-troubleshooting).

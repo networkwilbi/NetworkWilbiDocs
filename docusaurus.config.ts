@@ -83,6 +83,7 @@ const config: Config = {
   ],
 
   themes: [
+    '@docusaurus/theme-mermaid',
     [
       '@easyops-cn/docusaurus-search-local',
       {
@@ -120,6 +121,24 @@ const config: Config = {
           to: '/docs',
           label: 'Introduction',
           position: 'left',
+        },
+        {
+          label: 'Networking',
+          position: 'left',
+          items: [
+            {
+              to: '/docs/networking',
+              label: 'Overview',
+            },
+            {
+              to: '/docs/networking/network-security',
+              label: 'Network Security',
+            },
+            {
+              to: '/docs/networking/network-troubleshooting',
+              label: 'Troubleshooting',
+            },
+          ],
         },
         {
           label: 'Password Managers',
@@ -184,6 +203,9 @@ const config: Config = {
       additionalLanguages: ['dax', 'csharp', 'powerquery', 'powershell', 'yaml', 'nginx', 'editorconfig', 'typescript', 'javascript', 'systemd', 'ini', 'bash', 'apacheconf'],
     },
   } satisfies Preset.ThemeConfig,
+  markdown: {
+    mermaid: true,
+  },
 };
 
 export default config;
