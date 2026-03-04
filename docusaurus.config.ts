@@ -82,6 +82,20 @@ const config: Config = {
     },
   ],
 
+  themes: [
+    [
+      '@easyops-cn/docusaurus-search-local',
+      {
+        hashed: true,
+        language: ['en'],
+        indexDocs: true,
+        indexPages: true,
+        indexBlog: false,
+        highlightSearchTermsOnTargetPage: true,
+      },
+    ],
+  ],
+
   themeConfig: {
     metadata: [
       { name: 'keywords', content: 'cybersecurity, password manager, security, privacy, bitwarden, 1password, proton pass, phishing' },
