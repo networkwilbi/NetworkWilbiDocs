@@ -103,7 +103,7 @@ const config: Config = {
       { name: 'twitter:card', content: 'summary_large_image' },
     ],
     // Replace with your project's social card
-    image: 'blue-shield-social-card.jpg',
+    image: 'img/blue-shield-social-card.jpg',
     colorMode: {
       defaultMode: 'dark',
       disableSwitch: false,
