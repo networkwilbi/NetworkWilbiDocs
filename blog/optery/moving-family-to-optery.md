@@ -1,3 +1,9 @@
+---
+slug: moving-family-to-optery-blog
+title: Moving Family to Optery
+tags: [optery, data-brokers, data-removal, family, personal, privacy]
+---
+
 I have a problem.
 
 My family members keep getting robocalls, scams, email scams, phone calls, advertisements from places they may or may not have ever heard of, and it's cluttering their workflow and daily lives.
